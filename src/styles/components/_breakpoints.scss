@@ -1,0 +1,23 @@
+@mixin cont($w){
+    .container{
+        max-width: $w;
+    }
+}
+
+@include xxl{
+    @include cont($xl)
+}
+
+@include xl{
+    @include cont($lg)
+}
+@include lg{
+    @include cont($md)
+}
+
+@include md{
+    @include cont($sm)
+}
+@include sm{
+    @include cont(100%)
+}
