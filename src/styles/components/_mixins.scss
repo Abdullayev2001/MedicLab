@@ -1,4 +1,9 @@
 
+@mixin xxxl{
+    @media(max-width: $xxxl){
+        @content
+    }
+}; 
 @mixin xxl{
     @media(max-width: $xxl){
         @content
