@@ -1,6 +1,5 @@
 <template>
     <section class="home-main">
-        <h1 >Hello world</h1>
     </section>
 </template>
 
@@ -11,6 +10,7 @@
 <style>
 .home-main{
     font-family: 'montserrat';
+    height: 300vh;
 }
 
 </style>
