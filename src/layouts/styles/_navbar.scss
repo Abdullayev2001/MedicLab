@@ -9,10 +9,11 @@
     width: 100%;
     transition: 0.5s;
     @include lg{
-        padding: 30px 0;
+        padding: 20px 0;
         position: fixed;
     }
     &.active{
+        padding: 30px 0;
         background: rgba($color: $white, $alpha: 0.8);
         position: fixed;
     }
@@ -20,6 +21,7 @@
         display: flex;
         align-items: center;
         width: 100%;
+       
         .logo{
             font-size: 30px;
             font-weight: 600;
@@ -29,23 +31,24 @@
             }
             @include xl{
                 font-size: 20px;
+                width: 30%;
             }
 
         }
         .menu{
             display: flex;
+            @include xl{
+                width: 70%;
+                border: 1px solid red solid red;
+            }
             li{
                 .link{
                     margin-left: 61px;
                     font-size: 20px;
                     color: $black;
-                    @include xl{
+                    @include xxl{
                         font-size: 16px;
                         margin-left: 30px;
-                    }
-                    @include xxl{
-                        font-size: 18px;
-                        margin-left: 35px;
                     }
                     &:hover{
                         color: $brand_color;
@@ -58,12 +61,12 @@
             position: fixed;
             left: 0;
             top: 0;
-            padding: 20px 10px;
+            padding: 20px 30px 40px 10px;
             background-color: $white;
-            width: 300px;
+            width: 250px;
             height: 100%;
             min-height: 100vh;
-            transform: translateX(-350px);
+            transform: translateX(-100%);
             transition: 0.5s;
             opacity: 0;
             display: flex;
@@ -72,28 +75,25 @@
             align-items: center;
             z-index: 999;
             .search{
-                margin-bottom: 40px;
                 cursor: pointer;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                width: 100%;
                 padding: 15px 20px;
-                border: 1px solid $brand_color;
-                border-radius: 40px;
-                font-size: 14px;
-                gap: 10px;
+                font-size: 18px;
                 color: $brand_color;
+                border: 1px solid $brand_color;
+                border-radius: 50px;
+                gap: 20px;
             }
             ul{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 height: 100%;
-                gap: 30px;
                 li{
                     .mobile_menu_link{
                         color: black;
+                        padding: 20px 0;
                         &:hover{
                             color: $brand_color;
                         }
@@ -104,17 +104,20 @@
             }
         }
         .mobile_menu_active{
-            transform: translateX(0px);
+            transform: translateX(0);
             opacity: 1;
         }
         .burger{
             margin-left: auto;
+            transform: translateY(3px);
         }
         .actions{
             margin-left: 200px;
             display: flex;
             align-items: center;
-           
+            @include lg{
+                margin-left: auto;
+            }
             .search{
                 font-size: 25px;
                 color: $black;
@@ -122,16 +125,28 @@
             }
             .language{
                 margin-left: 33px;
-                font-size: 20px;
                 text-transform: uppercase;
                 cursor: pointer;
                 position: relative;
-                @include xxl{
+                width: 100%;
+                padding: 0 10px;
+                width: 100%;
+                
+                span{
                     font-size: 20px;
+                    @include xxl{
+                        font-size: 10px;
+                    }
+                  
+                    @include lg{
+                        font-size: 18px;
+                    }
+                  
+                    @include md{
+                        font-size: 13px;
+                    }
                 }
-                @include xl{
-                    font-size: 16px;
-                }
+               
               
                 
                 i{

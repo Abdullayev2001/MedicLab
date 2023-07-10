@@ -4,7 +4,7 @@
             <nav class="navbar">
                 <div class="logo">
                     <span>
-                        <h1>Medical Lab</h1>
+                        <h1>LOGO</h1>
                     </span>
                 </div>
                 <ul class="menu" v-if="!is_mobile">

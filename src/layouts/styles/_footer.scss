@@ -1,0 +1,11 @@
+@import '@/styles/components/_vars.scss';
+@import '@/styles/components/_mixins.scss';
+.footer{
+    .for-form{
+        background: linear-gradient(transparent 50%,$dark 50%);
+    }
+    .footer-content{
+        background: $dark;
+        height: 424px;
+    }
+}
