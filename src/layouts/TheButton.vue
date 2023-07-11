@@ -22,6 +22,12 @@
         background: $brand_color;
         font-family: 'Montserrat','sans-serif';
         box-shadow: -15px 20px 50px rgba(29,104,191, 0.3);
+        @include lg{
+            font-size: 14px;
+            min-width: 150px;
+            height: 40px;
+            padding: 0 15px;
+        }
         &.light{
             background: $white;
             color: $brand_color;

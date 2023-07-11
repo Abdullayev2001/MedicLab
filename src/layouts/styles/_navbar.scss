@@ -37,10 +37,6 @@
         }
         .menu{
             display: flex;
-            @include xl{
-                width: 70%;
-                border: 1px solid red solid red;
-            }
             li{
                 .link{
                     margin-left: 61px;
@@ -131,20 +127,18 @@
                 width: 100%;
                 padding: 0 10px;
                 width: 100%;
+                display: flex;
                 
                 span{
                     font-size: 20px;
                     @include xxl{
-                        font-size: 10px;
+                        font-size: 18px;
                     }
                   
                     @include lg{
                         font-size: 18px;
                     }
-                  
-                    @include md{
-                        font-size: 13px;
-                    }
+                 
                 }
                
               
@@ -160,14 +154,14 @@
                     transform: translateX(-50%) translateY(15px);
                     left: 40%;
                     text-align: center;
-                    top: 25;
+                    top: 55;
                     opacity: 0;
                     pointer-events: none;
                     box-shadow: 0 0 10px rgba($black, $alpha:0.2);
                     transition: transform 0.3s;
                     &.active{
                         opacity: 1;
-                        transform: translate(-50%) translateY(0);
+                        transform: translate(-50%) translateY(25px);
                         pointer-events: all;
                     }
                     li{
