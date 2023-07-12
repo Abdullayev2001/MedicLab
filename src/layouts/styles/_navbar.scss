@@ -118,6 +118,7 @@
                 font-size: 25px;
                 color: $black;
                 cursor: pointer;
+                color: $white;
             }
             .language{
                 margin-left: 33px;
@@ -149,7 +150,7 @@
                 }
                 .dropdown{
                     position: absolute;
-                    background: $white;
+                    background: $brand_color;
                     width: 150%;
                     transform: translateX(-50%) translateY(15px);
                     left: 40%;
